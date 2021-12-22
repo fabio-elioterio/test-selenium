@@ -1,4 +1,4 @@
-# test-slenium
+# test-selenium
 Projeto de estudo para automação de testes front Web com Selenium WebDriver
 
 Para rodar os testes são necessários:
