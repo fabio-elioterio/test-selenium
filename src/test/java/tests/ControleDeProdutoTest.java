@@ -88,14 +88,4 @@ public class ControleDeProdutoTest extends BaseTest {
         assertEquals(mensagem, controleProdutoPage.spanMensagem.getText());
 
     }
-
-    @Test
-    public void TC003_deveManterNaMesmaPaginaAoClicarNaLogoDeControleDeProdutos() {
-        controleProdutoPage.logoControleProduto.click();
-
-        String title = controleProdutoPage.obterTituloDaPagina();
-
-        assertEquals("Controle de Produtos", title);
-
-    }
 }
