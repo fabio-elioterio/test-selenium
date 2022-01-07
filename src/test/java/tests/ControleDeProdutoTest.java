@@ -39,16 +39,6 @@ public class ControleDeProdutoTest extends BaseTest {
         controleProdutoPage.buttonSair.click();
     }
 
-//    @Test
-//    public void TC002_naoDeveSerPossivelCadastrarUmProdutoSemPreencherTodosOsCampos() {
-//        controleProdutoPage.buttonAdicionar.click();
-//
-//        controleProdutoPage.cadastrarProduto("00001", "Martelo", 10, 59.9, "");
-//
-//        assertEquals("Todos os campos são obrigatórios para o cadastro!",
-//                controleProdutoPage.spanMensagem.getText());
-//    }
-
     @Test
     public void TC002_naoDeveSerPossivelCadastrarUmProdutoSemPreencherTodosOsCampos() {
         controleProdutoPage.buttonAdicionar.click();
@@ -96,6 +86,16 @@ public class ControleDeProdutoTest extends BaseTest {
                 .builder();
 
         assertEquals(mensagem, controleProdutoPage.spanMensagem.getText());
+
+    }
+
+    @Test
+    public void TC003_deveManterNaMesmaPaginaAoClicarNaLogoDeControleDeProdutos() {
+        controleProdutoPage.logoControleProduto.click();
+
+        String title = controleProdutoPage.obterTituloDaPagina();
+
+        assertEquals("Controle de Produtos", title);
 
     }
 }

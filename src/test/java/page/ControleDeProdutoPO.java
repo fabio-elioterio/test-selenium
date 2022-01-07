@@ -37,8 +37,14 @@ public class ControleDeProdutoPO extends BasePO {
     @FindBy(id = "btn-sair")
     public WebElement buttonSair;
 
+    @FindBy(className = "close")
+    public WebElement buttonClose;
+
     @FindBy(id = "mensagem")
     public WebElement spanMensagem;
+
+    @FindBy(className = "navbar-brand")
+    public WebElement logoControleProduto;
 
     /**
      * Construtor base para a criação da fabrica de elementos (PageFactory).

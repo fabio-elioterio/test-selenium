@@ -18,7 +18,7 @@ public abstract class BaseTest {
     /**
      * Caminho base da URL do sistema a ser testado
      */
-    private static final String URL_BASE = "file:///C:/Users/Dell/Documents/curso%20selenium/sistema/login.html";
+    private static final String URL_BASE = "src/test/resources/pages-frontend/login.html";
 
     /**
      * Caminho relativo do driver ao projeto referente ao path
